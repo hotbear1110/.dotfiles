@@ -1,0 +1,7 @@
+player=mpv
+twitch-low-latency
+twitch-disable-ads
+hls-live-edge 1
+hls-segment-threads 2
+title {title}
+twitch-api-header=
