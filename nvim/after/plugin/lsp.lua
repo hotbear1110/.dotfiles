@@ -6,6 +6,7 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'lua_ls',
+    'golang',
 })
 
 lsp.on_attach(function(client, bufnr)
