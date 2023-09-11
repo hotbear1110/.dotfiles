@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -112,7 +112,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Main"
 set $ws2 "2: Chatterino"
-set $ws3 "3: Discord/Reward-queue"
+set $ws3 "3: Discord/ Reward-queue"
 set $ws4 "4: Spotify"
 set $ws5 "5"
 set $ws6 "6"
@@ -207,7 +207,7 @@ colors {
 
 # Startup apps
 exec_always autorandr --load default
-exec com.chatterino.chatterino
+exec chatterino
 exec discord
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
@@ -261,7 +261,7 @@ exec_always "xinput set-prop 15 155 0.7 0 0 0 0.7 0 0 0 1"
 default_border pixel 1
 
 # Custom keybindings
-bindsym $mod+n exec "streamlink twitch.tv/nymn best"
+bindsym $mod+n exec "streamlink twitch.tv/nymn best --twitch-disable-ads --twitch-low-latency --config ~/.config/streamlink/config/config.twitch"
 bindsym $mod+k exec "kpl"
 
 

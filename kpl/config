@@ -31,7 +31,7 @@ FONT="mono 12"
 
 # Extra arguments passed to streamlink. Use space as separator as shown below.
 # Example: ="--twitch-disable-hosting --twitch-disable-ads --twitch-low-latency --hls-live-edge=1"
-STREAMLINK_ARGS="--twitch-disable-ads --twitch-low-latency"
+STREAMLINK_ARGS="--twitch-disable-ads --twitch-low-latency --config ~/.config/streamlink/config/config.twitch"
 
 # For pointing to an alternative rofi configuration file.
 # No quotes, full path. Default is no value.
