@@ -1,0 +1,20 @@
+#!/bin/sh
+
+pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+muted=$(pactl get-source-mute @DEFAULT_SOURCE@);
+
+if [ "$muted" == "Mute: yes" ];
+then
+
+sed -i -e 's/background #282A36/background #FF0000/g' ~/.config/i3/config
+i3-msg reload
+play /home/hotbear1110/Downloads/discord-mute-sound-effect.wav;
+
+else
+
+sed -i -e 's/background #FF0000/background #282A36/g' ~/.config/i3/config
+i3-msg reload
+play /home/hotbear1110/Downloads/discord-unmute.wav;
+
+fi
