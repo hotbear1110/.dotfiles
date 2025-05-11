@@ -1,1 +1,1 @@
-xrandr --output DP-2 -s 1920x1440 -r 240.00 --scale-from 1920x1440 --primary; %command% -novid; xrandr --output DP-2 -s 2560x1440 -r 240.00 --scale-from 2560x1440
+xrandr --output DP-2 -s 1920x1440 -r 480.00 --scale-from 1920x1440 --primary; %command% -novid; xrandr --output DP-2 -s 2560x1440 -r 480.00 --scale-from 2560x1440
