@@ -2,6 +2,6 @@ player=mpv
 twitch-low-latency
 twitch-disable-ads
 hls-live-edge 1
-hls-segment-threads 2
+#hls-segment-threads 2
 title {title}
-twitch-api-header=
+twitch-api-header=Authorization=OAuth 5l01uoz1yighnp8sa3k8kvprfdtjus
