@@ -1,0 +1,39 @@
+{
+    "commands": [
+        {
+            "name": "/addnamecommand",
+            "func": "!add command {1} @$(usersource;1:username_raw), {2+}",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/editnamecommand",
+            "func": "!edit command {1} @$(usersource;1:username_raw), {2+}",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/nuke",
+            "func": "/w botnextdoor #nymn !nuke {3+} {1} {2}",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/emotesonscreenenable",
+            "func": "/w botnextdoor !module enable emotesonscreen",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/emotesonscreendisable",
+            "func": "/w botnextdoor !module disable emotesonscreen",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/reload7tv",
+            "func": "!7tvemotes reload",
+            "showInMsgContextMenu": false
+        },
+        {
+            "name": "/permanuke",
+            "func": "!nuke {1+} -r=2m 1m ban",
+            "showInMsgContextMenu": false
+        }
+    ]
+}
