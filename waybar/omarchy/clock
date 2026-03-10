@@ -1,5 +1,5 @@
   "clock": {
-    "format": "{:%d-%m %H:%M:%S}",
+    "format": "{:%d/%m/%Y %X}",
     "tooltip": false,
     "interval": 1,
   },
